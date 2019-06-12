@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome To RPA</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.4.0/css/intlTelInput.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="script/jquery-ui.js"></script>
+    <script src="script/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="script/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="script/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.4.0/js/intlTelInput.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="./images/v2-logo.png"></a>
+    </header>
+    <section>
+        <img src="./images/triangle.png" class="triangle-img">
+        <div class="slideshow-container">
+            <!-- Welcome Block -->
+            <div class="mySlides welcome-block">
+                <div class="welcome-text">
+                    <h1>Welcome to World's First</h1>
+                    <h1 class="orange-text">RPA Effort Guesstimate Engine.</h1>
+                    <label>At least you know if things are in Days, Weeks or Months</label>
+                </div>
+                <a class="next-prev-arrow next" onclick="displaySlide(2)">&#10095;</a>
+                <div class="btn-block">
+                    <button class="btn" onclick="displaySlide(2)">Continue</button>
+                </div>
+            </div>
+            <!-- Welcome Block -->
+
+            <!-- Dragdrop Block -->
+            <div class="mySlides dragdrop_content">
+
+                <div class="drag-and-drop-container-wrapper">
+                    <div class="list-assumptions">
+                        List of assumptions
+                        <div class="info-tooltip">
+                            <i class="circle-info-icon">i</i>
+                            <div class="info-content">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been
+                                    the industry's standard dummy text ever since the 1500s,</p>
+                                <p>Lorem ipsum dolor sit amet, consecture adipiscing elit,</p>
+                                <p>Lorem ipsum dolor sit amet, consecture adipiscing elit,</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="drag-and-drop-container">
+                        <h2 class="drag-title">Design your small work flow by choosing from below events.</h2>
+                        <div class="alert-msg">
+                            Maximum 7 event can select
+                        </div>
+                        <div class="inner-content" id="darg-drop-container">
+                            <div class="left-side">
+                                <label class="events-content drag" id="send_receive_mail">
+                                    <div class="info-tooltip">
+                                        <i class="circle-info-icon">i</i>
+                                        <div class="info-content">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s
+                                        </div>
+                                    </div>
+                                    <span class="events-name">Receive/Send mail</span>
+                                    <select class="select-content" id="select_send_receive_mail" name="select_send_receive_mail">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+                                <label class="events-content drag" id="open_browser_login">
+                                    <div class="info-tooltip">
+                                        <i class="circle-info-icon">i</i>
+                                        <div class="info-content">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s
+                                        </div>
+                                    </div>
+                                    <span class="events-name">Open Browser, Login</span>
+                                    <select class="select-content" id="select_open_browser_login" name="select_open_browser_login">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+                                <label class="events-content drag" id="extract_content_from_page">
+                                    <div class="info-tooltip">
+                                        <i class="circle-info-icon">i</i>
+                                        <div class="info-content">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s
+                                        </div>
+                                    </div>
+                                    <span class="events-name">Extract content from one Page</span>
+                                    <select class="select-content" id="select_extract_content_from_page" name="select_extract_content_from_page">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+                                <label class="events-content drag" id="build_excel_CSV_file">
+                                    <div class="info-tooltip">
+                                        <i class="circle-info-icon">i</i>
+                                        <div class="info-content">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s
+                                        </div>
+                                    </div>
+                                    <span class="events-name">Build Excel of CSV File from Data</span>
+                                    <select class="select-content" id="select_build_excel_CSV_file" name="select_build_excel_CSV_file">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+                                <label class="events-content drag" id="advance_formating_excel">
+                                    <div class="info-tooltip">
+                                        <i class="circle-info-icon">i</i>
+                                        <div class="info-content">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s
+                                        </div>
+                                    </div>
+                                    <span class="events-name">Advance Formating in Excel</span>
+                                    <select class="select-content" id="select_advance_formating_excel" name="select_advance_formating_excel">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+                                <label class="events-content drag" id="log_event">
+                                    <div class="info-tooltip">
+                                        <i class="circle-info-icon">i</i>
+                                        <div class="info-content">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s
+                                        </div>
+                                    </div>
+                                    <span class="events-name">Log Event</span>
+                                    <select class="select-content" id="select_log_event" name="select_log_event">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+                                <label class="events-content drag" id="append_line">
+                                    <div class="info-tooltip">
+                                        <i class="circle-info-icon">i</i>
+                                        <div class="info-content">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s
+                                        </div>
+                                    </div>
+                                    <span class="events-name">Append Line</span>
+                                    <select class="select-content" id="select_append_line" name="select_append_line">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+                                <label class="events-content drag" id="copy_file">
+                                    <div class="info-tooltip">
+                                        <i class="circle-info-icon">i</i>
+                                        <div class="info-content">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s
+                                        </div>
+                                    </div>
+                                    <span class="events-name">Copy file</span>
+                                    <select class="select-content" id="select_copy_file" name="select_copy_file">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+                                <label class="events-content drag" id="upload_file">
+                                    <div class="info-tooltip">
+                                        <i class="circle-info-icon">i</i>
+                                        <div class="info-content">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s
+                                        </div>
+                                    </div>
+                                    <span class="events-name">Upload file</span>
+                                    <select class="select-content" id="select_upload_file" name="select_upload_file">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+                                <label class="events-content drag" id="connect_DB_maintain">
+                                    <div class="info-tooltip">
+                                        <i class="circle-info-icon">i</i>
+                                        <div class="info-content">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s
+                                        </div>
+                                    </div>
+                                    <span class="events-name">Connect to DB to maintain master data</span>
+                                    <select class="select-content" id="select_connect_DB_maintain" name="select_connect_DB_maintain">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+                                <label class="events-content drag" id="open_url_browser">
+                                    <div class="info-tooltip">
+                                        <i class="circle-info-icon">i</i>
+                                        <div class="info-content">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s
+                                        </div>
+                                    </div>
+                                    <span class="events-name">Open an URL in Browser</span>
+                                    <select class="select-content" id="select_open_url_browser" name="select_open_url_browser">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+                                <label class="events-content drag" id="access_local_file">
+                                    <div class="info-tooltip">
+                                        <i class="circle-info-icon">i</i>
+                                        <div class="info-content">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s
+                                        </div>
+                                    </div>
+                                    <span class="events-name">Access Local File</span>
+                                    <select class="select-content" id="select_access_local_file" name="select_access_local_file">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+                                <label class="events-content drag" id="post_data_SAP">
+                                    <div class="info-tooltip">
+                                        <i class="circle-info-icon">i</i>
+                                        <div class="info-content">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s
+                                        </div>
+                                    </div>
+                                    <span class="events-name">Post Data to SAP</span>
+                                    <select class="select-content" id="select_post_data_SAP" name="select_post_data_SAP">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+                                <label class="events-content drag" id="download_file">
+                                    <div class="info-tooltip">
+                                        <i class="circle-info-icon">i</i>
+                                        <div class="info-content">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s
+                                        </div>
+                                    </div>
+                                    <span class="events-name">Download file</span>
+                                    <select class="select-content" id="select_download_file" name="select_download_file">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+                                <label class="events-content drag" id="scrap_web_data">
+                                    <div class="info-tooltip">
+                                        <i class="circle-info-icon">i</i>
+                                        <div class="info-content">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s
+                                        </div>
+                                    </div>
+                                    <span class="events-name">Scrape web datal</span>
+                                    <select class="select-content" id="select_scrap_web_data" name="select_scrap_web_data">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="right-side drop">
+                                <label class="drag-event-sec">
+                                    Drag and drop an event to begin
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-block">
+                    <button class="btnReset" id="dragdropcontentReset">Reset</button>
+                    <div class="wrapper-drag-continue">
+                        <button class="btnDragDropContinue" id="dragdropcontentContinue">Continue</button>
+                    </div>
+                </div>
+                <a class="next-prev-arrow prev" onclick="displaySlide(1)">&#10094;</a>
+                <div class="wrapper-drag-next">
+                    <a class="next-prev-arrow1 next1 dragdropButtonNextClass" id="dragdropButtonNext">&#10095;</a>
+                </div>
+            </div>
+            <!-- Dragdrop Block -->
+
+            <!-- Licence Block -->
+            <div class="mySlides licence-robot-block">
+                <div class="list-assumptions">
+                    List of assumptions
+                    <div class="info-tooltip">
+                        <i class="circle-info-icon">i</i>
+                        <div class="info-content">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been
+                                the industry's standard dummy text ever since the 1500s,</p>
+                            <p>Lorem ipsum dolor sit amet, consecture adipiscing elit,</p>
+                            <p>Lorem ipsum dolor sit amet, consecture adipiscing elit,</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="licence-text" id="licence-text-id">
+                    <h2>Do you need to know cost of your licence ?</h2>
+                    <button class="btn btn-yes" onclick="clickYes()" id="yes-button">YES</button>
+                    <button class="btn btn-no" onclick="clickNo()">NO</button>
+                </div>
+                <a class="next-prev-arrow prev" onclick="displaySlide(2)">&#10094;</a>
+            </div>
+            <!-- Licence Block -->
+
+            <!-- Robot Block -->
+            <div class="mySlides licence-robot-block">
+                <div class="list-assumptions">
+                    List of assumptions
+                    <div class="info-tooltip">
+                        <i class="circle-info-icon">i</i>
+                        <div class="info-content">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been
+                                the industry's standard dummy text ever since the 1500s,</p>
+                            <p>Lorem ipsum dolor sit amet, consecture adipiscing elit,</p>
+                            <p>Lorem ipsum dolor sit amet, consecture adipiscing elit,</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="robot-text">
+                    <div class="robot-wrapper">
+                        <h2>Choose the type and number of Robots</h2>
+                        <label class="robot-no-content">
+                            <div class="info-tooltip">
+                                <i class="circle-info-icon">i</i>
+                                <div class="info-content">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been
+                                        the industry's standard dummy text ever since the 1500s,</p>
+                                    <p>Lorem ipsum dolor sit amet, consecture adipiscing elit,</p>
+                                    <p>Lorem ipsum dolor sit amet, consecture adipiscing elit,</p>
+                                </div>
+                            </div>
+                            Type of Robot
+                            <select class="count-content robot-type-count-content" id="robotype" required>
+                                <option value=''>Select</option>
+                                <option value='attended'>Attended Robot</option>
+                                <option value='unattended'>Unattended Robot</option>
+                                <option value='robotmanager'>Robot Manager</option>
+                            </select>
+                        </label>
+                        <label class="robot-no-content">
+                            <div class="info-tooltip">
+                                <i class="circle-info-icon">i</i>
+                                <div class="info-content">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been
+                                        the industry's standard dummy text ever since the 1500s,</p>
+                                    <p>Lorem ipsum dolor sit amet, consecture adipiscing elit,</p>
+                                    <p>Lorem ipsum dolor sit amet, consecture adipiscing elit,</p>
+                                </div>
+                            </div>
+                            No. of Robots
+                            <select class="count-content robot-no-count-content" id="robotno" required>
+                                <option value=''>0</option>
+                                <option value='1'>1</option>
+                                <option value='2'>2</option>
+                                <option value='3'>3</option>
+                                <option value='4'>4</option>
+                                <option value='5'>5</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="btn-block">
+                        <div class="wrapper-drag-continue">
+                            <button class="btn1" id="robotButtonContinue">Continue</button>
+                        </div>
+                    </div>
+                    <a class="next-prev-arrow prev" onclick="displaySlide(3)">&#10094;</a>
+                    <div class="wrapper-drag-next">
+                        <a class="next-prev-arrow1 next1 robotButtonNextClass" id="robotButtonNext">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Robot Block -->
+
+            <!-- Contact Us YES Block -->
+            <div class="mySlides contactus-block">
+                <div class="contact-us">
+                    <h2>Contact Us</h2>
+                    <form action="" name="contactusyes" method="POST">
+                        <div class="form-wrapper">
+                            <div class="form-1 error-align-color">
+                                <input type="text" placeholder="Name" name="name" id="name" required>
+                                <input type="text" placeholder="Designation" name="designation" id="designation"
+                                    required>
+                                <input type="tel" placeholder="Phone No." name="phone" id="phone" required>
+
+                                <input type="text" placeholder="Comments" name="comments" id="comments">
+                            </div>
+                            <div class="form-2 error-align-color">
+                                <input type="text" placeholder="Organization" name="organization" id="organization"
+                                    required>
+                                <input type="email" placeholder="Email ID" name="email" id="email" required>
+                            </div>
+                        </div>
+                        <!--  <div class="contact-us-wrapper"> </div> -->
+                        <div class="btn-block">
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <a class="next-prev-arrow prev" onclick="backFromContact()">&#10094;</a>
+                <!--  <a class="next-prev-arrow next" onclick="plusSlides(1)">&#10095;</a> -->
+            </div>
+            <!-- Contact Us YES Block -->
+            <!-- Draft Estimate YES Block -->
+            <div class="mySlides draft-estimate-block">
+                <div class="draft-estimate">
+                    <h2>Your Draft Estimation</h2>
+                    <label><span id="man-days-efforts"></span> Man Days of Effort</label>
+                    <label id="minMaxLabel"><span id="minCost"></span> to <span id="maxCost"></span> cost range of your
+                        license</label>
+                    <label class="print-estimation">
+                        <a href="cost-range-estimation.html" target="_blank"><img src="./images/print.png">Print Your
+                            Estimation</a>
+                    </label>
+                </div>
+                <div class="draft-text">
+                    <h2>Want more specific estimate and Price Quote ?</h2>
+                    <button class="btn btn-yes" onclick="alert('You Clicked Yes, You will be redirected to another link')">YES</button>
+                    <button class="btn btn-no" onclick="alert('You Clicked No')">NO</button>
+                </div>
+                <a class="next-prev-arrow prev" onclick="displaySlide(5)">&#10094;</a>
+            </div>
+            <!-- Draft Estimate YES Block -->
+        </div>
+    </section>
+    <script type="text/javascript" src="script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RPA PDF</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/pdf-style.css">
+    <script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="script/jquery-ui.js"></script>
+    <script type="text/javascript" src="script/cost-estimation.js"></script>
+</head>
+<body>
+	<section>
+        <div class="container-pdf">
+            <img src="./images/triangle.png" class="triangle-img">
+            <div class="main-pdf">
+                <div class="header-section">
+                    <a href="index.html"><img src="./images/v2-pdf-logo.png"></a>
+                    <div class="label-wrapper">
+                        <label>Phone No. : +1(408)550-2340</label>
+                        <label>Email ID: info@v2solutions.com</label>
+                    </div>
+                </div>
+                <div class="draft-estimation">
+                    <h2 class="light-font">Your Draft Estimation</h2>
+                    <h2 class="gray-dark-font"><span class="light-color-blue" id="man-days-efforts"></span> Man Days of Effort</h2>
+                </div>
+                <h3 class="table-title">You have created below workflow</h3>
+                <table class="workflow-table">
+                    <tbody id="workFlowBody">
+                        
+                    </tbody>
+                </table>
+                <div class="robot" id="roboTypeNumberDiv">
+                    <div class="robot-type">
+                        <h2 class="gray-light-font">Type of Robot</h2>
+                        <h2 class="text-orange-color"><span id="roboType"></span></h2>
+                    </div>
+                    <div class="robot-number">
+                        <h2 class="gray-light-font">No. of Robot</h2>
+                        <h2 class="text-orange-color"><span id="roboNumber"></span></h2>
+                    </div>
+                </div>
+                <div class="draft-estimation" id="costRangeDiv">
+                        <h2 class="gray-dark-font"><span class="text-orange-color" id="minCost"></span> to <span class="text-orange-color" id="maxCost"></span> cost range of your license</h2>
+                </div>                
+                
+            </div>
+        </div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,184 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.triangle-img {
+    position: absolute;
+}
+
+.gray-light-font {
+    font-size: 30px;
+    font-weight: 100;
+    color: #4b5053;
+}
+
+.gray-dark-font {
+    font-size: 24px;
+    color: #4f5456;
+}
+
+.light-color-blue {
+    color: #7aadbf;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.text-orange-color {
+    color: #d97d4a;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.container-pdf {
+    margin: 20px auto;
+    max-width: 700px;
+    background: linear-gradient(112deg, rgba(45, 130, 175, 1) 0%, rgba(45, 130, 175, 1) 63%, rgba(120, 177, 205, 1) 63%, rgba(120, 177, 205, 1) 100%);
+    padding: 20px;
+}
+
+.main-pdf {
+    background-color: #ebf3f6;
+    padding: 20px;
+}
+
+.header-section {
+    margin: 0px auto;
+}
+
+.header-section img {
+    display: block;
+    margin: 0px auto;
+}
+
+.label-wrapper {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+.header-section label {
+    padding: 0px 6px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0px 6px;
+}
+
+.header-section label:first-child {
+    border-right: 1px solid black;
+}
+
+.draft-estimation {
+    margin: 37px auto;
+    text-align: center;
+}
+
+.draft-estimation h2 {
+    margin-bottom: 20px;
+}
+
+.robot {
+       /* border-top: 1px solid #caced0;*/
+    text-align: center;
+    margin: 25px auto 25px;
+    border-bottom: 1px solid #caced0;
+    padding-bottom: 25px;
+    max-width: fit-content;
+}
+
+.robot-type {
+    border-right: 1px solid rgba(158, 158, 158, 0.5);
+    height: 90px;
+
+}
+
+.robot-type,
+.robot-number {
+    /*margin-top: 25px;*/
+    display: inline-block;
+    padding: 0px 50px;
+}
+
+.robot-type h2:nth-child(1),
+.robot-number h2:nth-child(1) {
+    margin-bottom: 15px;
+}
+
+.workflow-header {
+    padding: 0px 50px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.workflow-header h2 {
+    border-top: 1px solid rgba(158, 158, 158, 0.5);
+    margin-bottom: 10px;
+    padding-top: 37px;
+    font-size: 20px;
+}
+
+.workflow-table {
+    margin: 0px auto;
+    height: 200px;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #d4c9c9;
+}
+
+h3.table-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.workflow-table th {
+    background-color: #ebebeb;
+}
+
+.workflow-table tr:nth-child(even) {
+    background-color: #f6f4f5;
+}
+
+.workflow-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.workflow-table td:nth-child(even) {
+    width: 25%;
+    text-align: center;
+}
+
+.workflow-table th:nth-child(odd) {
+    padding-left: 30px;
+    text-align: left;
+}
+
+.workflow-table td:nth-child(odd) {
+    border-right: 1px solid #dddddd;
+    padding-left: 30px;
+}
+
+.workflow-table th,
+td {
+    padding: 13px;
+}
+
+.draft-estimation {
+    text-align: center;
+    margin: 20px auto 25px;
+    max-width: fit-content;
+}
+
+.draft-estimation h2 {
+    margin-bottom: 20px;
+}
+
+.draft-estimation.no-border-bottom {
+    border-bottom: none;
+}
